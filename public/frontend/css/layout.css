@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%; /* Ensure the whole page takes full height */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.mycontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto; /* The middle row should take the remaining space */
+  width: 100vw;
+  height: 100vh; /* Ensure container takes up the full height of the viewport */
+}
+
+.nav_super_class {
+  grid-row: 1/2;
+  width: 100vw;
+  background-color: #000000;;
+}
+
+.content {
+  grid-row: 2/3;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%; /* Make sure the content row stretches to fill the height of the grid */
+}
+
+.footer_super_class {
+  grid-row: 3/4;
+  width: 100vw;
+}

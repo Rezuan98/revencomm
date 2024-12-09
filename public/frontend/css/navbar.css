@@ -1,0 +1,65 @@
+.nav_common_container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  background-color: #18082B;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-item a {
+  color: #F2F2F2;
+}
+
+.nav-item .nav-link {
+  color: #F2F2F2;
+}
+
+#consultation {
+  position: relative;
+  background-color: white;
+  color: #18082B;  /* Dark text color by default */
+  border-radius: 15px;
+  padding: 10px 20px;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  transition: color 0.3s, background-color 0.3s;  /* Added transition for color */
+}
+
+#consultation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #f1eb4a;
+  transition: left 0.5s ease-in-out;
+  border-radius: 15px;
+  z-index: -1;  /* Ensure background is behind the text */
+}
+
+#consultation:hover::before {
+  left: 0; /* On hover, the background expands from left to right */
+}
+
+#consultation:hover {
+  background-color: #f1eb4a;  /* Change the background color */
+  color: #18082B;  /* Ensure text color remains dark on hover */
+}
+
+#consultation:hover {
+  color: #18082B; /* Text color stays dark, ensuring contrast */
+}
+
+.navbar-toggler-icon {
+  background-color: white !important; /* Make the toggler icon white */
+}
